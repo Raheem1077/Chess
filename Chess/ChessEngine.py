@@ -27,6 +27,38 @@ class GameState:
         self.moveLog.append(move) # log the move so we can undo it later
         self.whiteToMove = not self.whiteToMove # swap players
 
+    def undoMove(self):
+        if len(self.moveLog) != 0:
+            move = self.moveLog.pop()
+            self.board[move.startRow][move.startCol] = move.pieceMoved
+            self.board[move.endRow][move.endCol] = move.pieceCaptured
+            self.whiteToMove = not self.whiteToMove
+
+    def getValidMoves(self):
+        return self.getAllpossibleMoves()
+    def  getAllpossibleMoves(self):
+        moves=[Move((6,4),(4,4),self.board)]
+        for r in range(len(self.board)):
+            for c in range(len(self.board[r])):
+                turn = self.board[r][c][0]
+                if(turn == 'w' and self.whiteToMove) or (turn == 'b' and not self.whiteToMove):
+                    piece=self.board[r][c][1]
+                    if piece=='p':
+                        self.getPawnmoves(r,c,moves)
+                    elif piece=='R':
+                        self.getRookmoves(r,c,moves)
+        return moves
+    '''get all possible moves for a pawn'''
+    def getPawnmoves(self,r,c,moves):
+        pass
+    '''get all possible moves for a rook'''
+    def getRookmoves(self,r,c,moves):
+        pass
+
+
+
+
+
 class Move():
     # maps keys to values
     # key : value
@@ -44,6 +76,14 @@ class Move():
         self.endCol = endSq[1]
         self.pieceMoved = board[self.startRow][self.startCol]
         self.pieceCaptured = board[self.endRow][self.endCol]
+        self.moveID = self.startRow * 1000 + self.startCol * 100 + self.endRow * 10 + self.endCol
+        print(self.moveID)
+
+    '''Overridig the equals method to compare moves'''
+    def __eq__(self, other):
+        if isinstance(other, Move):
+            return self.moveID == other.moveID
+        return False
 
     def getChessNotation(self):
         # You can add to make this like real chess notation

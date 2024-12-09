@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="732b2aa0-334b-423d-b6fd-b3f865b78916" name="Changes" comment=" chess board color plus video 3 (enabling methods for valid moves but one pawn is moved yet">
+      <change beforePath="$PROJECT_DIR$/.idea/Chess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chess.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chess/ChessEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/ChessEngine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/ChessMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/ChessMain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +24,12 @@
     &quot;assignee&quot;: &quot;wizz-ctrl&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Raheem1077/Chess.git&quot;,
-    &quot;accountId&quot;: &quot;8912aabe-6c75-4379-b3c8-d80a753c27b7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Raheem1077/Chess",
+    "accountId": "a7e40594-57c6-4cd0-9fa2-dc41d44d852b"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -111,6 +112,10 @@
       <workItem from="1733041515408" duration="359000" />
       <workItem from="1733077881803" duration="1009000" />
       <workItem from="1733325036964" duration="15444000" />
+      <workItem from="1733773831811" duration="3431000" />
+      <workItem from="1733777322780" duration="106000" />
+      <workItem from="1733777540752" duration="6000" />
+      <workItem from="1733777717334" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="chess board color">
       <option name="closed" value="true" />
@@ -151,6 +156,7 @@
     <option name="LAST_COMMIT_MESSAGE" value=" chess board color plus video 3 (enabling methods for valid moves but one pawn is moved yet" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Chess1$ChessMain.coverage" NAME="ChessMain Coverage Results" MODIFIED="1733777335686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chess" />
     <SUITE FILE_PATH="coverage/Chess$ChessMain.coverage" NAME="ChessMain Coverage Results" MODIFIED="1733346279052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chess" />
   </component>
 </project>
